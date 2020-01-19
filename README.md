@@ -44,7 +44,7 @@ The results of a LinearSVC yielded an average accuracy of 0.59 across all 35 tes
 
 A qualitative assessment of the data showed that there is a strong spatial correlation between accuracy and proximity to the training data. The map below plots the accuracy of each test data set on the surface of the earth (Figure 7). Visual examination shows that the test data sets that are adjacent or near to the training data tend to perform very well. Another unsurprising trend is that data sets with similar land cover to the training data (single family residential) tend to perform much better than other land covers. This is best exemplified by the two high performing tiles at the top-center of the study area, which perform well despite their distance from the study area. This is most likely because they contain similar land cover to the training data.
 
-[results_mapped](/images/ics635_haleiwa_map_results.png)
+![results_mapped](/images/ics635_haleiwa_map_results.png)
 
 ## Conclusion
 This preliminary study has identified two interesting findings. First, LinearSVC performance was equally high as the other more complex kernels, such as RBF. This dramatically reduces model run times. SVC was assumed to be a poorly suited algorithm for classification of aerial LiDAR due to the incredibly large sample sizes. However, the ability to apply LinearSVC dramatically reduces model training times and makes data sets in the millions very manageable on high-end workstations. Second, a LinearSVC can be trained on a small subset of labeled data and applied to the surrounding area with accuracies that exceed the current state of the art. However, this ability to generalize to new areas is heavily constrained by the terrain and land cover characteristics. 
