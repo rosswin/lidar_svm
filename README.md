@@ -1,6 +1,6 @@
 # Filtering of Aerial Light Detection and Ranging Data using Support Vector Classification
-## Ross Winans
-## ICS635 Final Project: May 7, 2018
+Ross Winans
+ICS635 Final Project: May 7, 2018
 
 ## Objectives
 This study will explore the ability of soft-margin support vector classification (SVC) to filter aerial LiDAR data. Soft-margin SVC has been chosen because it is a large margin classifier, which should help a relatively small number of training points generalize to a larger data set while avoiding overfitting.
@@ -40,7 +40,7 @@ The results of the grid search with 3-fold cross validation produced surprising 
 ## Test Results
 The results of a LinearSVC yielded an average accuracy of 0.59 across all 35 testing data sets. The standard deviation of accuracies was 0.39, with a low accuracy of 0.013, and a high accuracy of 0.99. The average accuracy is well below the current industry best. However, 40% of the test data sets’ accuracy exceeded 0.90. These results are well above the current industry best results. See the histogram showing the frequency of accuracy values (Figure 6). Due to the wide range of accuracy values, the bins were determined using Natural Jenks, a data clustering algorithm designed to minimize the variance within classes, while maximizing the variance between classes.
 
-![test_accuracy_histogram](/images/ics635_accuracies_historgram.png)
+![test_accuracy_histogram](/images/ics635_accuracies_histogram.png)
 
 A qualitative assessment of the data showed that there is a strong spatial correlation between accuracy and proximity to the training data. The map below plots the accuracy of each test data set on the surface of the earth (Figure 7). Visual examination shows that the test data sets that are adjacent or near to the training data tend to perform very well. Another unsurprising trend is that data sets with similar land cover to the training data (single family residential) tend to perform much better than other land covers. This is best exemplified by the two high performing tiles at the top-center of the study area, which perform well despite their distance from the study area. This is most likely because they contain similar land cover to the training data.
 
