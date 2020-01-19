@@ -8,6 +8,9 @@ This study will explore the ability of soft-margin support vector classification
 The study data for this project is taken from the 2013 National Oceanic and Atmospheric Administration’s Topographic LiDAR for Oahu, Hawai’i. This data set was collected at a sampling density of 2 points per square meter, 10cm RMSE vertical accuracy, and pre-labeled as ground or object with 98% or higher classification accuracy.  
 ## Study Area
 A neighborhood in the town of Haleiwa was chosen for this study (Figure 1). This area was chosen due to its relatively flat terrain and mixed land cover (residential, agricultural, and forest cover). The study area is 2,250 km2 and is comprised of 4.49 million sample points. A centrally located, representative location was chosen for the training data. The training data is 1/36th of the full data set, representing 62.5 km2, consisting of 132,217 total samples. The remaining study area (2,187.5 km2, 4.36 million points) will be used to test the performance of the classification.
+
+![Haleiwa Map](/images/ics635_haleiwa.png)
+
 ## Methods
 1. A through literature review of traditional aerial LiDAR filtering algorithms have identified features that are useful for filtering of aerial LiDAR. These features were calculated for each point. Below is a list of all features used for classification:
     * Z- the elevation of the point above local mean sea level
