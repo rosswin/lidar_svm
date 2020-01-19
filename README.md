@@ -1,6 +1,7 @@
 # Filtering of Aerial Light Detection and Ranging Data using Support Vector Classification
-Ross Winans
-ICS635 Final Project: May 7, 2018
+## W. Ross Winans
+## ICS635 Final Project
+## May 7, 2018
 
 ## Objectives
 This study will explore the ability of soft-margin support vector classification (SVC) to filter aerial LiDAR data. Soft-margin SVC has been chosen because it is a large margin classifier, which should help a relatively small number of training points generalize to a larger data set while avoiding overfitting.
